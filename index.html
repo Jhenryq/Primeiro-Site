@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+
+
+</head>
+
+<body>
+
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="mb-0">Minha Página Web</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#secao1">Seção 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#secao2">Seção 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#secao3">Seção 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container mt-4">
+
+        <section id="secao1" class="p-4 mb-4 bg-light rounded">
+            <h2 class="mb-3">Seção 1: Introdução</h2>
+            <p>Esta é a primeira seção da nossa página. Aqui, você pode introduzir o tema principal do seu site e
+                fornecer algumas informações gerais.</p>
+        </section>
+
+
+        <section id="secao2" class="p-4 mb-4 bg-secondary text-white rounded">
+            <h2 class="mb-3">Seção 2: Sobre Nós</h2>
+            <p>Esta seção pode conter informações sobre sua equipe, sua missão e a visão da sua empresa ou organização.
+            </p>
+        </section>
+
+
+        <section id="secao3" class="p-4 bg-light rounded">
+            <h2 class="mb-3">Seção 3: Contato</h2>
+            <p>Aqui você pode fornecer detalhes de contato, como e-mail, telefone ou formulário para os visitantes
+                entrarem em contato com você.</p>
+        </section>
+    </main>
+
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; <span id="anoAtual"></span> Minha Página Web. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
